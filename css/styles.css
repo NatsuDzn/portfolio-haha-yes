@@ -321,10 +321,10 @@ li a:hover {
   }
 }
 
-.glitch{
+.glitch {
   position: relative;
   margin: 0 auto;
-} 
+}
 
 .glitch:after {
   content: attr(data-text);
@@ -372,6 +372,8 @@ li a:hover {
 .nav-menu svg {
   width: 32px;
   height: 32px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .nav-menu a {
@@ -382,6 +384,8 @@ li a:hover {
 li {
   font-size: 12px;
   text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 h1 {
@@ -390,6 +394,16 @@ h1 {
   text-transform: uppercase;
   font-size: 80px;
   text-align: center;
+}
+
+.moreWorks {
+  position: absolute;
+  bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
 }
 
 h2 {
