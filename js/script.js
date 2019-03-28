@@ -1,5 +1,5 @@
 var one = "#000000",
-  two = "#7f3995",
+  two = "#22a6b3",
   three = "#0d78e7",
   four = "#f88f18",
   five = "#bb6774";
@@ -48,7 +48,7 @@ TxtRotate.prototype.tick = function() {
   this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
   var that = this;
-  var delta = 300 - Math.random() * 100;
+  var delta = 190 - Math.random() * 100;
 
   if (this.isDeleting) {
     delta /= 2;

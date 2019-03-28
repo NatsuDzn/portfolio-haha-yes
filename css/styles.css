@@ -1,15 +1,19 @@
-@import url(//db.onlinewebfonts.com/c/7ccc732353a266bee0d99b75cf08e134?family=Helvetica+Neue);
+@font-face {
+  font-family: 'HelveticaNeueLT Com 63 MdEx';
+  src: url('../fonts/HelveticaNeueLTCom-HvEx.woff2') format('woff2'),
+      url('../fonts/HelveticaNeueLTCom-HvEx.woff') format('woff');
+}
 
 body {
   background: #000000;
   color: #fff;
-  font-family: "Helvetica Neue";
+  font-family: 'HelveticaNeueLT Com 63 MdEx';
   margin: 0;
   transition: all 200ms;
   will-change: background;
 }
 
-article {
+.article {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -399,8 +403,7 @@ h1 {
 .moreWorks {
   position: absolute;
   bottom: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-family: 'HelveticaNeueLT Com 63 MdEx';
   text-transform: uppercase;
   text-align: center;
   font-size: 12px;
@@ -412,9 +415,46 @@ h2 {
   text-align: center;
   color: transparent;
   -webkit-text-stroke: 2px white;
+}
+
+.myCreations {
+  font-size: 40px;
+  margin: 55px;
+}
+
+.myCreationsName {
+  text-transform: uppercase;
+  font-size: 64px;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
   margin-top: 15px;
+}
+
+.myCreationsName:hover {
+  color: #FFFFFF;
+  transition: all 200ms ease-out;
+}
+
+.myCreationsName:hover::after {
+  margin: 25px;
+  content: ">";
 }
 
 .clear {
   clear: both;
+}
+
+#five article {
+  height: 65vh;
+}
+
+.footerMe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 35vh;
+  color: #000000;
+  background: #FFFFFF;
 }
