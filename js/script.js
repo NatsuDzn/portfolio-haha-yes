@@ -83,3 +83,11 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 1px solid #FFFFFF }";
   document.body.appendChild(css);
 };
+
+$(document).ready(function() {
+  $('.myCreationsName').mouseover(function() {
+    myvar = this.id;
+    $("div.projectpic").hide();
+    $('#div' + myvar).show();
+  });
+});
