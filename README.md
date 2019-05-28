@@ -1,2 +1,0 @@
-# portfolio-haha-yes
-wip 
