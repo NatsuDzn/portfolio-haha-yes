@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css" />
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
   <link rel="stylesheet" href="css/animate.css">
-  <script src="js/wow.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <title>Louzoun Nathanael I Portfolio</title>
@@ -49,13 +49,13 @@
     </div>
   </header>
 
-  <article class="article" id="one" data-color="#000000">
+  <article class="main" id="one" data-color="#000000">
     <h1 class="glitch" data-text="NATHANAEL LOUZOUN">Nathanael Louzoun</h1>
     <h2 class="txt-rotate" data-period="2000" data-rotate='[ "front end.", "designer.", "french  dev.", "looking for an internship.", "blank" ]'></h2>
     <div class="scroll-down"></div>
   </article>
 
-  <article class="article wow fadeInUp" id="two" data-color="#22a6b3">
+  <article class="works" id="two" data-color="#22a6b3">
     <div class="projectpic" id="divone">
       <img src="assets/nespresso.jpg" alt="nespresso" class="img-responsive img-thumbnail" />
     </div>
@@ -68,32 +68,19 @@
     <h3 class="myCreationsName">Alfred</h3>
     <h3 class="myCreationsName">Nike Product Page</h3>
     <div class="clear"></div>
-  </article>
+  </div>  
+</article>
 
-  <article class="article" id="three" data-color="#0d78e7">
-    <h1>Dolor</h1>
-    <div class="clear"></div>
-  </article>
-
-  <article class="article" id="four" data-color="#f88f18">
-    <h1>Sit</h1>
-    <div class="clear"></div>
-  </article>
-
-  <article class="article" id="five" data-color="#E91E63">
-    <h1>Amet</h1>
-    <div class="clear"></div>
-  </article>
-
-  <footer class="footerMe">
+<footer class="footerMe">
     <h3>footer</h3>
   </footer>
 
+  <div class="cursor-dot-outline"></div>
+  <div class="cursor-dot"></div>
 </body>
 
 </html>
 
-<script src="js/wow.min.js"></script>
 <script>
-new WOW().init();
+ScrollReveal().reveal('.works', { delay: 150 });
 </script>
