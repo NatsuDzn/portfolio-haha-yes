@@ -519,6 +519,35 @@ h2 {
   animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
 
+@media screen and (max-width: 1280px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .glitch {
+    font-size: 56px;
+  }
+
+  .txt-rotate {
+    font-size: 36px;
+  }
+
+  .myCreations {
+    font-size: 42px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+  }
+
+  .myCreationsName {
+    font-size: 36px;
+    color: white;
+    width: 50vh;
+    text-align: center;
+  }
+
+}
+
+
 @keyframes fade_move_down {
   0% {
         transform: translate(0, -20px) rotate(45deg);
@@ -561,4 +590,5 @@ h2 {
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
+
 }
