@@ -512,7 +512,7 @@ h2 {
   }
 
   .burger-button {
-    position: fixed;
+    position: absolute;
     top: 30px;
     right: 25px;
     z-index: 9;
