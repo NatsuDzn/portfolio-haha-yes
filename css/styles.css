@@ -377,6 +377,10 @@ li a:hover {
   animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .headerNav {
   position: fixed;
   background-color: transparent;
@@ -506,9 +510,95 @@ h2 {
     display: none;
   }
 
+  .burger-button {
+    position:fixed;
+    top: 2vh;
+    right: 2vh;
+    z-index: 9;
+    padding: 8px;
+  }
+  /*this is where you can chand the color of the buttons*/
+  .burger-button span{
+    width: 40px;
+    border: 2px solid white;
+    background-color: white;
+    display: block;
+    transition: .5s;
+  }
+  .burger-button.active span{
+    border-color: white;
+    background-color: white;
+  }
+  
+  .burger-top, .burger-bottom{
+    position: absolute;
+  }
+  
+  .burger-top{
+    top: -02px;
+  }
+  
+  .burger-bottom{
+    bottom: -02px;
+  }
+  /* make sure this has the same top as the burger button has padding*/
+  .burger-button.active .burger-top{
+    position: absolute;
+    top: 8px;
+    transform: rotateZ(45deg);
+  }
+  
+  .burger-button.active .burger-middle{
+  /*   transform: rotateZ(270deg); */
+    border-color: white;
+    background-color:white;
+  }
+  
+  /* make sure this has the same bottom as the burger button has padding*/
+  
+  .burger-button.active .burger-bottom{
+    position: absolute;
+    bottom: 8px;
+    transform: rotateZ(-45deg);
+  }
+  
+  .burger-menu {
+      display: flex;
+      position: fixed;
+      top: -100vh;
+      left:0;
+      right: 0;
+      bottom: 100vh;
+      background-color: black;
+      padding:5px;
+      z-index: 8;
+    transition:.5s;
+      align-content:space-around;
+    justify-content:space-around;
+    flex-direction:column;
+  }
+  .burger-menu.active{
+    top:0;
+    bottom:0;
+  }
+  .burger-menu a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: #C3BFBC;
+    display:block;
+    text-align:center;
+  }
+  
+
   .glitch {
     font-size: 34px;
     padding-bottom: 25px;
+    z-index: -1;
+  }
+
+  .scroll-down {
+    z-index: -1;
   }
 
   .txt-rotate {
