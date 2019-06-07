@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="description"
-      content="Hi I'm Nathanael Louzoun, a french front dev and designer based in Paris, currently looking for an internship..."
-    />
+    <meta name="description" content="Hi I'm Nathanael Louzoun, a french front dev and designer based in Paris, currently looking for an internship..."/>
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -90,10 +87,7 @@
             <li><a href="#about">A propos de moi</a></li>
             <li><a href="#works">Mes créations</a></li>
             <li>
-              <a
-                href="https://drive.google.com/file/d/1BCHYRtsQr7tJcmvexH37hTdOyUi61USH/view?usp=sharing"
-                target="_blank"
-                >CV</a
+              <a href="https://drive.google.com/file/d/1BCHYRtsQr7tJcmvexH37hTdOyUi61USH/view?usp=sharing" target="_blank">CV</a
               >
             </li>
             <li><a href="#contact">Contact</a></li>
@@ -104,11 +98,7 @@
 
     <article class="main">
       <h1 class="glitch" data-text="NATHANAEL LOUZOUN">Nathanael Louzoun</h1>
-      <h2
-        class="txt-rotate"
-        data-period="2000"
-        data-rotate='[ "front end.", "designer.", "french  dev.", "looking for an internship.", "blank" ]'
-      ></h2>
+      <h2 class="txt-rotate" data-period="2000" data-rotate='[ "front end.", "designer.", "french  dev.", "looking for an internship.", "student at HETIC" ]'></h2>
       <div class="scroll-down"></div>
     </article>
 
@@ -128,6 +118,9 @@
       <div class="projectpic" id="divfive">
         <img src="assets/wearyourmind.jpg" alt="wearyourmind" class="img-responsive img-thumbnail" />
       </div>
+      <div class="projectpic" id="divseven">
+        <img src="assets/nike.jpg" alt="nike" class="img-responsive img-thumbnail" />
+      </div>
       <h1 class="myCreations">Mes créations</h1>
       <h3 class="myCreationsName" id="one">Nespresso</h3>
       <h3 class="myCreationsName" id="two">Dassault Aviation</h3>
@@ -135,12 +128,29 @@
       <h3 class="myCreationsName" id="four">So Comptoir</h3>
       <h3 class="myCreationsName" id="five">WearYourMind</h3>
       <h3 class="myCreationsName">Alfred</h3>
-      <h3 class="myCreationsName">Nike Product Page</h3>
-      <div class="clear"></div>
-    </div>  
+      <h3 class="myCreationsName" id="seven">Nike Product Page</h3>
+      <div class="clear"></div> 
+    </article>
+
+    <footer class="contact">
+      <div class="footer">
+        <p class="footerText">Intéressé par mon profil ? Contacter moi !</p>
+        <hr class="separator">
+        <p class="socialNetworks">Suivez moi</p>
+        <ul class="socialWrapper">
+          <div id="icons" class="linkedin">linkedin</div>
+          <div id="icons" class="dribble">dribble</div>
+          <div id="icons" class="github">github</div>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
 
 <script>
-  ScrollReveal().reveal(".works", { delay: 150 });
+  ScrollReveal().reveal(".works", { delay: 250 });
+  ScrollReveal().reveal(".contact", { delay: 150 });
+  ScrollReveal().reveal(".linkedin", { delay: 150 });
+  ScrollReveal().reveal(".dribble", { delay: 300 });
+  ScrollReveal().reveal(".github", { delay: 450 });
 </script>
