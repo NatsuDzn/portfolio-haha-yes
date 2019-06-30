@@ -1,11 +1,17 @@
-ScrollReveal().reveal('.reveal');
+ScrollReveal().reveal(".reveal");
+
+ScrollReveal().reveal(".works", { delay: 250 });
+ScrollReveal().reveal(".contact", { delay: 150 });
+ScrollReveal().reveal(".linkedin", { delay: 150 });
+ScrollReveal().reveal(".dribble", { delay: 300 });
+ScrollReveal().reveal(".github", { delay: 450 });
 
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
   this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
+  this.txt = "";
   this.tick();
   this.isDeleting = false;
 };
@@ -20,7 +26,7 @@ TxtRotate.prototype.tick = function() {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+  this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
 
   var that = this;
   var delta = 190 - Math.random() * 100;
@@ -32,7 +38,7 @@ TxtRotate.prototype.tick = function() {
   if (!this.isDeleting && this.txt === fullTxt) {
     delta = this.period;
     this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
+  } else if (this.isDeleting && this.txt === "") {
     this.isDeleting = false;
     this.loopNum++;
     delta = 200;
@@ -44,10 +50,10 @@ TxtRotate.prototype.tick = function() {
 };
 
 window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
+  var elements = document.getElementsByClassName("txt-rotate");
   for (var i = 0; i < elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
+    var toRotate = elements[i].getAttribute("data-rotate");
+    var period = elements[i].getAttribute("data-period");
     if (toRotate) {
       new TxtRotate(elements[i], JSON.parse(toRotate), period);
     }
@@ -60,15 +66,15 @@ window.onload = function() {
 };
 
 $(document).ready(function() {
-  $('.myCreationsName').mouseover(function() {
+  $(".works__title").mouseover(function() {
     myvar = this.id;
-    $("div.projectpic").hide();
-    $('#div' + myvar).show();
+    $("div.works__projectpic").hide();
+    $("#div" + myvar).show();
   });
 });
 
-$( document ).ready(function() {
-  $(".burger-button").click(function(){
+$(document).ready(function() {
+  $(".burger-button").click(function() {
     $(".burger-button").toggleClass("active");
     $(".burger-menu").toggleClass("active");
   });

@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Hi I'm Nathanael Louzoun, a french front dev and designer based in Paris, currently looking for an internship..."/>
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <meta
+      name="description"
+      content="Hi I'm Nathanael Louzoun, a french front dev and designer based in Paris, currently looking for an internship..."
+    />
+    <link rel="stylesheet" type="text/css" href="scss/styles.scss" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
     <title>Louzoun Nathanael I Portfolio</title>
   </head>
-  <body>
+  <body class="bodyWrapper">
     <nav class="navigationWebsite--mobile">
       <div class="burger-button">
         <span class="burger-top"></span>
@@ -27,11 +28,12 @@
       </div>
     </nav>
 
-    <header class="headerNav">
-      <div class="headerWrapper">
-        <nav class="navigationWebsite">
-          <ul class="nav-menu">
+    <header class="header">
+      <div class="header__wrapper">
+        <nav class="header__navwrapper">
+          <ul class="header__nav">
             <svg
+              class="header__logo"
               width="284"
               height="268"
               viewBox="0 0 284 268"
@@ -84,13 +86,23 @@
                 </filter>
               </defs>
             </svg>
-            <li><a href="#about">A propos de moi</a></li>
-            <li><a href="#works">Mes créations</a></li>
-            <li>
-              <a href="https://drive.google.com/file/d/1BCHYRtsQr7tJcmvexH37hTdOyUi61USH/view?usp=sharing" target="_blank">CV</a
+            <li class="header__items">
+              <a class="header__links" href="#about">A propos de moi</a>
+            </li>
+            <li class="header__items">
+              <a class="header__links" href="#works">Mes créations</a>
+            </li>
+            <li class="header__items">
+              <a
+                class="header__links"
+                href="https://drive.google.com/file/d/1BCHYRtsQr7tJcmvexH37hTdOyUi61USH/view?usp=sharing"
+                target="_blank"
+                >CV</a
               >
             </li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="header__items">
+              <a class="header__links" href="#contact">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -98,46 +110,80 @@
 
     <article class="main">
       <h1 class="glitch" data-text="NATHANAEL LOUZOUN">Nathanael Louzoun</h1>
-      <h2 class="txt-rotate" data-period="2000" data-rotate='[ "front end.", "designer.", "french  dev.", "looking for an internship.", "student at HETIC" ]'></h2>
+      <h2
+        class="txt-rotate"
+        data-period="2000"
+        data-rotate='[ "front end.", "designer.", "french  dev.", "looking for an internship.", "student at HETIC" ]'
+      ></h2>
       <div class="scroll-down"></div>
     </article>
 
     <article class="works">
-      <div class="projectpic" id="divone">
-        <img src="assets/nespresso.jpg" alt="nespresso" class="img-responsive img-thumbnail" />
+      <div class="works__projectpic" id="divone">
+        <img
+          class="works__img"
+          src="assets/projects/nespresso.jpg"
+          alt="nespresso"
+          class="img-responsive img-thumbnail"
+        />
       </div>
-      <div class="projectpic" id="divtwo">
-        <img src="assets/dassault.jpg" alt="dassault" class="img-responsive img-thumbnail" />
+      <div class="works__projectpic" id="divtwo">
+        <img
+          class="works__img"
+          src="assets/projects/dassault.jpg"
+          alt="dassault"
+          class="img-responsive img-thumbnail"
+        />
       </div>
-      <div class="projectpic" id="divthree">
-        <img src="assets/booking.jpg" alt="booking" class="img-responsive img-thumbnail" />
+      <div class="works__projectpic" id="divthree">
+        <img
+          class="works__img"
+          src="assets/projects/booking.jpg"
+          alt="booking"
+          class="img-responsive img-thumbnail"
+        />
       </div>
-      <div class="projectpic" id="divfour">
-        <img src="assets/socomptoir.jpg" alt="socomptoir" class="img-responsive img-thumbnail" />
+      <div class="works__projectpic" id="divfour">
+        <img
+          class="works__img"
+          src="assets/projects/socomptoir.jpg"
+          alt="socomptoir"
+          class="img-responsive img-thumbnail"
+        />
       </div>
-      <div class="projectpic" id="divfive">
-        <img src="assets/wearyourmind.jpg" alt="wearyourmind" class="img-responsive img-thumbnail" />
+      <div class="works__projectpic" id="divfive">
+        <img
+          class="works__img"
+          src="assets/projects/wearyourmind.jpg"
+          alt="wearyourmind"
+          class="img-responsive img-thumbnail"
+        />
       </div>
-      <div class="projectpic" id="divseven">
-        <img src="assets/nike.jpg" alt="nike" class="img-responsive img-thumbnail" />
+      <div class="works__projectpic" id="divseven">
+        <img
+          class="works__img"
+          src="assets/projects/nike.jpg"
+          alt="nike"
+          class="img-responsive img-thumbnail"
+        />
       </div>
-      <h1 class="myCreations">Mes créations</h1>
-      <h3 class="myCreationsName" id="one">Nespresso</h3>
-      <h3 class="myCreationsName" id="two">Dassault Aviation</h3>
-      <h3 class="myCreationsName" id="three">Booking</h3>
-      <h3 class="myCreationsName" id="four">So Comptoir</h3>
-      <h3 class="myCreationsName" id="five">WearYourMind</h3>
-      <h3 class="myCreationsName">Alfred</h3>
-      <h3 class="myCreationsName" id="seven">Nike Product Page</h3>
-      <div class="clear"></div> 
+      <h1 class="works__maintitle">Mes créations</h1>
+      <h3 class="works__title" id="one">Nespresso</h3>
+      <h3 class="works__title" id="two">Dassault Aviation</h3>
+      <h3 class="works__title" id="three">Booking</h3>
+      <h3 class="works__title" id="four">So Comptoir</h3>
+      <h3 class="works__title" id="five">WearYourMind</h3>
+      <h3 class="works__title">Alfred</h3>
+      <h3 class="works__title" id="seven">Nike Product Page</h3>
+      <div class="clear"></div>
     </article>
 
     <footer class="contact">
       <div class="footer">
-        <p class="footerText">Intéressé par mon profil ? Contacter moi !</p>
-        <hr class="separator">
-        <p class="socialNetworks">Suivez moi</p>
-        <ul class="socialWrapper">
+        <p class="footer__text">Intéressé par mon profil ? Contacter moi !</p>
+        <hr class="footer__seperator" />
+        <p class="footer__socialNetworks">Suivez moi</p>
+        <ul class="footer__socialWrapper">
           <div id="icons" class="linkedin">linkedin</div>
           <div id="icons" class="dribble">dribble</div>
           <div id="icons" class="github">github</div>
@@ -147,10 +193,4 @@
   </body>
 </html>
 
-<script>
-  ScrollReveal().reveal(".works", { delay: 250 });
-  ScrollReveal().reveal(".contact", { delay: 150 });
-  ScrollReveal().reveal(".linkedin", { delay: 150 });
-  ScrollReveal().reveal(".dribble", { delay: 300 });
-  ScrollReveal().reveal(".github", { delay: 450 });
-</script>
+<script type="text/javascript" src="js/script.js"></script>
