@@ -57,7 +57,7 @@
   margin: 0;
   transition: all 200ms;
   will-change: background;
-  cursor: url("../assets/cursor.svg"), pointer;
+  cursor: url("../assets/cursor.svg") 4 12, pointer;
 }
 
 .main {
@@ -200,6 +200,7 @@
 
   &__text {
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     text-align: right;
     padding-bottom: 25px;
   }
@@ -214,21 +215,28 @@
 
   &__socialWrapper {
     display: flex;
-
-    #icons {
-      padding: 50px 15px 50px 0px;
-
-      &:before {
-        content: ".";
-        padding-right: 5px;
-      }
-    }
+    justify-content: space-around;
+    padding: 50px 15px 50px 0px;
   }
 
-  &__links {
-    text-decoration: none;
-    color: inherit;
+  &__icons {
+    fill: white;
+    width: 52px;
+    height: 52px;
+    transition: ease .35s;
   }
+}
+
+#linkedin:hover {
+  fill: #0077B5;
+}
+
+#dribbble:hover {
+  fill: #ea4c89
+}
+
+#github:hover {
+  fill: #333;
 }
 
 @media screen and (max-width: 1280px) {
